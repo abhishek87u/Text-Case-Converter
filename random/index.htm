@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Case Converter - Abhishek Pandey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="http://pabhishekpandey.netlify.app/" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/140425353?v=4" alt="Logo" class="logo">
+      </a>
+      <h1>Text Case Converter</h1>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="input-section">
+      <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+      <div class="buttons">
+        <button onclick="convertToUpper()">To Uppercase</button>
+        <button onclick="convertToLower()">To Lowercase</button>
+      </div>
+    </div>
+    <div id="outputSection" class="output-section">
+      <p id="outputText">Your converted text will appear here...</p>
+      <button onclick="copyOutput()" class="copy-btn">Copy Output</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>DEVELOPED BY ABHISHEK PANDEY</p>
+    <marquee behavior="scroll" direction="left">Welcome to the Text Case Converter by Abhishek Pandey</marquee>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
